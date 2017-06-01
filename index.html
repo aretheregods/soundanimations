@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Audio Visualizer Stuff</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <audio id="audioElement" src="./Sleep Away.mp3"></audio>
+        <div>
+            <button onclick="document.getElementById('audioElement').play()">Play the Audio</button>
+            <button onclick="document.getElementById('audioElement').pause()">Pause the Audio</button>
+            <button onclick="document.getElementById('audioElement').volume+=0.1">Increase Volume</button>
+            <button onclick="document.getElementById('audioElement').volume-=0.1">Decrease Volume</button>
+        </div>
+        <canvas id="canvas" ></canvas>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.9.1/d3.min.js"></script>
+        <!--<script src="soundshower.js"></script>-->
+        <script src="soundplayer.js"></script>
+    </body>
+</html>
